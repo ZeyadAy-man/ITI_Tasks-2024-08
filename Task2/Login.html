@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(210, 234, 255);
+        }
+        legend{
+            color: rgb(8, 147, 190);
+            font-size: 20px;
+            font-weight: 800;
+        }
+        fieldset{
+            margin-top: 200px;
+            border: 3px solid rgb(0, 97, 157);
+            background-color: rgb(202, 255, 246);
+        }
+        form{
+            width: 500px;
+            margin: auto;
+        }
+        .username, .password, .submitField{
+            padding: 10px;
+        }
+        #usernameField, #passwordField, .submitField{
+            margin: 10px 0px 0px 0px;
+            padding: 8px;
+        }
+        .submit{
+            display: block;
+            margin: auto;
+            color: rgb(0, 0, 0);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px;
+        }
+        .l{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Login</legend>
+            <div class="username">
+                <label for="usernameField" class="l">User name:</label><br>
+                <input type="text" placeholder="Enter user name" id="usernameField" accesskey="n" name="username">
+            </div>
+            <div class="password">
+                <label for="passwordField" class="l">User password:</label><br>
+                <input type="password" placeholder="Enter user password" id="passwordField" accesskey="p" name="password">
+            </div>
+            <div class="submitField">
+                <input type="checkbox"><label>Remember Me</label>
+            </div>
+            <input type="submit" value="Sign In" class="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

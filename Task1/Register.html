@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(210, 234, 255);
+        }
+        h2{
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 20px;
+        }
+        table{
+            margin: auto;
+            margin-top: 30px;
+        }
+        td{
+            border: 4px solid rgb(125, 125, 125);
+            font-weight: 700;
+            font-size: 18px;
+            padding: 20px;
+        }
+        .interests{
+            text-align: center;
+        }
+        .button{
+            padding: 10px;
+            background-color: rgb(147, 201, 248);
+            margin: 0px 20px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        select{
+            padding: 10px;
+            background-color: rgb(147, 201, 248);
+            font-weight: 700;
+            font-size: 16px;   
+        }
+        .b1{
+            padding: 5px;
+        }
+        textarea{
+            resize: none;
+        }
+        .l1{
+            background-color: rgb(137, 240, 250);
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration</h2>
+    <table>
+        <form action="">
+            <tr>
+                <td class="l1"><label for="firstName">First Name</label></td>
+                <td colspan="2"><input type="text" class="b1" id="firstName" required placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td class="l1"><label for="lastName">Last Name</label></td>
+                <td colspan="2"><input type="text" class="b1" id="lastName" required placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td class="l1"><label for="email">Email</label></td>
+                <td colspan="2"><input type="text" class="b1" id="email" required placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td class="l1"><label for="password">Password</label></td>
+                <td colspan="2"><input type="password" class="b1" id="password" required placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td class="l1" rowspan="2"><label for="male">Gender</label></td>
+                <td colspan="2"><input type="radio" name="Gender" id="female"><label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="radio" name="Gender" id="male"><label for="male">Male</label></td>
+            </tr>
+            <tr>
+                <td class="l1"><label for="country">Country</label></td>
+                <td colspan="2">
+                    <select required name="" id="country">
+                        <optgroup label="Europe">
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>         
+                            <option value="Switherland">Switherland</option>         
+                            <option value="Finland">Finland</option>         
+                            <option value="Poland">Poland</option>         
+                            <option value="Albania">Albania</option>                  
+                        </optgroup>
+                        <optgroup label="North America">
+                            <option value="USA">USA</option>         
+                            <option value="Canada">Canada</option>                
+                        </optgroup>
+                        <optgroup label="South America">
+                            <option value="Brazil">Brazil</option>         
+                            <option value="Cuba">Cuba</option>
+                            <option value="Argentina">Argentina</option>                          
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="Egypt">Egypt</option>         
+                            <option value="Algeria">Algeria</option>         
+                            <option value="Tunisia">Tunisia</option>         
+                        </optgroup>
+                        <optgroup label="Australia">
+                            <option value="Australia">Australia</option>         
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>         
+                            <option value="Sudia">Sudia</option>                  
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="l1"><label for="birthday">Birthday</label></td>
+                <td colspan="2"><input type="date" class="b1" id="birthday" required></td>
+            </tr>
+            <tr class="interests">
+                <td colspan="3" class="l1">Interests</td>
+            </tr>
+            <tr>
+                <td class="l"><input type="checkbox"><label>Sports</label></td>
+                <td class="l"><input type="checkbox"><label>Music</label></td>
+                <td class="l"><input type="checkbox"><label>Fashion</label></td>
+            </tr>
+            <tr>
+                <td class="l"><input type="checkbox"><label>Reading</label></td>
+                <td class="l"><input type="checkbox"><label>Shopping</label></td>
+                <td class="l"><input type="checkbox"><label>Movies</label></td>
+            </tr>
+            <tr class="interests">
+                <td class="l1" colspan="3"><label for="BIO">BIO</label></td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="3"><textarea name="BIO" id="BIO" rows="15" cols="45"></textarea></td>
+            </tr>
+            <tr class="interests">
+                <td colspan="3">
+                    <input type="reset" class="button" value="Reset">
+                    <input type="submit" class="button" value="Register">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
