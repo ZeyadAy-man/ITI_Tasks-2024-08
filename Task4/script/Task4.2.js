@@ -11,13 +11,16 @@ function cloningArrays(arrayOfNumbers){
         descendingOrderArray[i] = arrayOfNumbers[i];
     }
 }
+
 cloningArrays(arrayOfNumbers);
 
 ascendingOrderArray.sort(function(a, b){
     return a - b;
 });
+
 descendingOrderArray.sort(function(a, b){
     return b - a;
 });
+
 document.write(`<h2>The ascending array is ${ascendingOrderArray}</h2>`)
 document.write(`<h2>The descending array is ${descendingOrderArray}</h2>`)

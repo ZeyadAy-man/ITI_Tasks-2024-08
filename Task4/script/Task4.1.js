@@ -2,35 +2,23 @@ var arrayOfNumbers = [];
 for(let i = 0; i < 3; i++){
     arrayOfNumbers[i] = parseInt(prompt(`Enter the ${i + 1} number`));
 }
-function sumOfArray(arrayOfNumbers){
-    let initialValue = 0;
+var summation = 0, division = arrayOfNumbers[0], multiplication = 1, subtraction = 0;
+function operations(arrayOfNumbers){
     for(let i = 0; i < arrayOfNumbers.length; i++){
-        initialValue += arrayOfNumbers[i];
+        summation += arrayOfNumbers[i];
+        subtraction -= arrayOfNumbers[i];
+        multiplication *= arrayOfNumbers[i];
     }
-    return initialValue;
 }
-function divisionOfArray(arrayOfNumbers){
-    let initialValue = 1;
-    for(let i = 0; i < arrayOfNumbers.length; i++){
-        initialValue /= arrayOfNumbers[i];
+function divisionOperation(arrayOfNumbers){
+    for(let i = 1; i < arrayOfNumbers.length; i++){
+        division /= arrayOfNumbers[i];
+        console.log(division);
     }
-    return initialValue;
+    return division;
 }
-function multiplicationOfArray(arrayOfNumbers){
-    let initialValue = 1;
-    for(let i = 0; i < arrayOfNumbers.length; i++){
-        initialValue *= arrayOfNumbers[i];
-    }
-    return initialValue;
-}
-function subtractOfArray(arrayOfNumbers){
-    let initialValue = 0;
-    for(let i = 0; i < arrayOfNumbers.length; i++){
-        initialValue -= arrayOfNumbers[i];
-    }
-    return initialValue;
-}
-document.write(`<h1 style="color:red">The sum of array is ${sumOfArray(arrayOfNumbers)}</h1>`);
-document.write(`<h1 style="color:red">The subtract of array is ${subtractOfArray(arrayOfNumbers)}</h1>`)
-document.write(`<h1 style="color:red">The multiplication of array is ${multiplicationOfArray(arrayOfNumbers)}</h1>`)
-document.write(`<h1 style="color:red">The division of array is ${divisionOfArray(arrayOfNumbers)}</h1>`)
+operations(arrayOfNumbers);
+document.write(`<h1 style="color:red">The sum of array is ${summation}</h1>`);
+document.write(`<h1 style="color:red">The subtract of array is ${subtraction}</h1>`)
+document.write(`<h1 style="color:red">The multiplication of array is ${multiplication}</h1>`)
+document.write(`<h1 style="color:red">The division of array is ${divisionOperation(arrayOfNumbers)}</h1>`)
