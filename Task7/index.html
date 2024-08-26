@@ -1,0 +1,114 @@
+<!-- The user can enter characters via focusing in the Answer input field -->
+
+<html>
+
+<head>
+
+    <style>
+        .width {
+            width: 55px;
+            height: 55px;
+            background-color: rgb(228, 228, 228);
+        }
+
+        table {
+            float: left;
+            margin-right: 10px;
+        }
+
+        #td {
+            font-family: comic sans ms;
+            text-align: center;
+            color: white;
+            background-color: gray;
+            height: 30px;
+            font-size: 9pt;
+        }
+
+        #ans {
+            width: 100px;
+            height: 55px;
+            text-align: right;
+        }
+        #Answer{
+            height: 55px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table border="7">
+        <tr>
+            <td colspan="4" id="td"> JavaScript Calculator </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input id="Answer" type="text" id="ans" disabled>
+            </td>
+            <td>
+                <input type="button" class="width" value="=" id="b0" onclick="EnterEqual()" onmouseover="hovering(0)" onmouseout="outElement(0)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="width" value="1" id="b1" onclick="EnterNumber(this.value)" onmouseover="hovering(1)" onmouseout="outElement(1)">
+            </td>
+            <td>
+                <input type="button" class="width" value="2" id="b2" onclick="EnterNumber(this.value)" onmouseover="hovering(2)" onmouseout="outElement(2)">
+            </td>
+            <td>
+                <input type="button" class="width" value="3" id="b3" onclick="EnterNumber(this.value)"onmouseover="hovering(3)" onmouseout="outElement(3)">
+            </td>
+            <td>
+                <input type="button" class="width" value="+" id="b4" onclick="EnterOperator(this.value)" onmouseover="hovering(4)" onmouseout="outElement(4)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="width" value="4" id="b5" onclick="EnterNumber(this.value)" onmouseover="hovering(5)" onmouseout="outElement(5)">
+            </td>
+            <td>
+                <input type="button" class="width" value="5" id="b6" onclick="EnterNumber(this.value)" onmouseover="hovering(6)" onmouseout="outElement(6)">
+            </td>
+            <td>
+                <input type="button" class="width" value="6" id="b7" onclick="EnterNumber(this.value)" onmouseover="hovering(7)" onmouseout="outElement(7)">
+            </td>
+            <td>
+                <input type="button" class="width" value="-" id="b8" onclick="EnterOperator(this.value)" onmouseover="hovering(8)" onmouseout="outElement(8)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="width" value="7" id="b9" onclick="EnterNumber(this.value)" onmouseover="hovering(9)" onmouseout="outElement(9)">
+            </td>
+            <td>
+                <input type="button" class="width" value="8" id="b10" onclick="EnterNumber(this.value)" onmouseover="hovering(10)" onmouseout="outElement(10)">
+            </td>
+            <td>
+                <input type="button" class="width" value="9" id="b11" onclick="EnterNumber(this.value)" onmouseover="hovering(11)" onmouseout="outElement(11)">
+            </td>
+            <td>
+                <input type="button" class="width" value="*" id="b12" onclick="EnterOperator(this.value)" onmouseover="hovering(12)" onmouseout="outElement(12)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="width" value="C" id="b13" onclick="EnterClear()" onmouseover="hovering(13)" onmouseout="outElement(13)">
+            </td>
+            <td>
+                <input type="button" class="width" value="0" id="b14" onclick="EnterNumber(this.value)" onmouseover="hovering(14)" onmouseout="outElement(14)">
+            </td>
+            <td>
+                <input type="button" class="width" value="." id="b15" onclick="EnterNumber(this.value)" onmouseover="hovering(15)" onmouseout="outElement(15)">
+            </td>
+            <td>
+                <input type="button" class="width" value="/" id="b16" onclick="EnterOperator(this.value)" onmouseover="hovering(16)" onmouseout="outElement(16)">
+            </td>
+        </tr>
+    </table>
+    <script src="Scripts/script.js"></script>
+</body>
+
+</html>
